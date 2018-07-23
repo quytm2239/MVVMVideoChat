@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TDAddLogDialog" customModule="TourDe" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonAddLog" destination="Ah7-Nl-MGH" id="grb-Bi-yN9"/>
+                <outlet property="labelTitleAddMoneyLog" destination="jiG-r3-VdE" id="GMp-Sj-4Bo"/>
+                <outlet property="mainDialog" destination="HaF-nZ-vpa" id="4Zy-LH-C0t"/>
+                <outlet property="textFieldSpentDetail" destination="geV-zZ-5uZ" id="eN7-6r-EyW"/>
+                <outlet property="textFieldSpentMoney" destination="97Z-Kg-h1c" id="Upo-Z8-yS9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPc-aK-8cb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="actionClickUnder:" destination="-1" eventType="touchUpInside" id="bJn-AR-OSg"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HaF-nZ-vpa">
+                    <rect key="frame" x="47" y="216" width="280" height="175"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiG-r3-VdE">
+                            <rect key="frame" x="80" y="10" width="120" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="Ds8-Vh-iXI"/>
+                                <constraint firstAttribute="height" constant="25" id="Qno-7a-3Db"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input spent money" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="97Z-Kg-h1c">
+                            <rect key="frame" x="10" y="50" width="260" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input spent detail" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="geV-zZ-5uZ">
+                            <rect key="frame" x="10" y="90" width="260" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ah7-Nl-MGH">
+                            <rect key="frame" x="10" y="135" width="260" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="F9u-VK-qXi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                            <state key="normal" title="Add">
+                                <color key="titleColor" red="0.31372549019607843" green="0.78431372549019607" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="actionAddLog:" destination="-1" eventType="touchUpInside" id="Iqv-nU-7ex"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.31372549019607843" green="0.78431372549019607" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Ah7-Nl-MGH" secondAttribute="trailing" constant="10" id="AJg-v4-7nf"/>
+                        <constraint firstAttribute="trailing" secondItem="geV-zZ-5uZ" secondAttribute="trailing" constant="10" id="CeB-X4-SwK"/>
+                        <constraint firstAttribute="trailing" secondItem="97Z-Kg-h1c" secondAttribute="trailing" constant="10" id="FeD-WD-OEm"/>
+                        <constraint firstAttribute="width" constant="280" id="QjZ-RZ-kkX"/>
+                        <constraint firstItem="97Z-Kg-h1c" firstAttribute="top" secondItem="jiG-r3-VdE" secondAttribute="bottom" constant="15" id="ayv-Jc-eje"/>
+                        <constraint firstItem="97Z-Kg-h1c" firstAttribute="leading" secondItem="HaF-nZ-vpa" secondAttribute="leading" constant="10" id="bka-Rh-ZTq"/>
+                        <constraint firstAttribute="bottom" secondItem="Ah7-Nl-MGH" secondAttribute="bottom" constant="10" id="cv4-6Y-5vi"/>
+                        <constraint firstItem="geV-zZ-5uZ" firstAttribute="top" secondItem="97Z-Kg-h1c" secondAttribute="bottom" constant="10" id="ea9-ex-dN0"/>
+                        <constraint firstItem="jiG-r3-VdE" firstAttribute="centerX" secondItem="HaF-nZ-vpa" secondAttribute="centerX" id="hAx-ve-2k6"/>
+                        <constraint firstItem="geV-zZ-5uZ" firstAttribute="leading" secondItem="HaF-nZ-vpa" secondAttribute="leading" constant="10" id="nfA-Wd-iSc"/>
+                        <constraint firstItem="Ah7-Nl-MGH" firstAttribute="leading" secondItem="HaF-nZ-vpa" secondAttribute="leading" constant="10" id="qeg-Jk-SC3"/>
+                        <constraint firstItem="jiG-r3-VdE" firstAttribute="top" secondItem="HaF-nZ-vpa" secondAttribute="top" constant="10" id="qmp-ol-LlF"/>
+                        <constraint firstItem="Ah7-Nl-MGH" firstAttribute="top" secondItem="geV-zZ-5uZ" secondAttribute="bottom" constant="15" id="rr3-Gb-D54"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gPc-aK-8cb" secondAttribute="bottom" id="2Gp-bB-08H"/>
+                <constraint firstItem="gPc-aK-8cb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5rg-4e-5xF"/>
+                <constraint firstItem="gPc-aK-8cb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8Lm-ro-2q8"/>
+                <constraint firstItem="HaF-nZ-vpa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Q6E-xO-uhf"/>
+                <constraint firstItem="HaF-nZ-vpa" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-30" id="Xfq-xf-5CY"/>
+                <constraint firstAttribute="trailing" secondItem="gPc-aK-8cb" secondAttribute="trailing" id="aYA-eI-MoJ"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
